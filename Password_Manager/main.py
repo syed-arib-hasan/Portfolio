@@ -19,9 +19,9 @@ def gen_pass():
     password = "".join(password_list)
     password_entry.insert(END,password)
     pyperclip.copy(password) 
-# ---------------------------- SAVE PASSWORD ------------------------------- #
+# ---------------------------- SAVE_ PASSWORD ------------------------------- #
 
-def save():
+def save_():
     web=website_entry.get()
     mail=email_entry.get()
     pas= password_entry.get()
@@ -35,7 +35,7 @@ def save():
     if web=="" or pas=="":
         messagebox.askokcancel(title=web,message=f"Hey, dont leave anything empty")
     else:
-        flag=messagebox.askokcancel(title=web,message=f"Your details: \nEmail: {mail}\nPassword: {pas}\nSure you wanna save it?")
+        flag=messagebox.askokcancel(title=web,message=f"Your details: \nEmail: {mail}\nPassword: {pas}\nSure you wanna save_ it?")
         if flag:
             try:
                 with open ("output.json","r") as data_file:
@@ -106,7 +106,7 @@ password_entry.grid(row=3, column=1,sticky="w ")
 # Buttons
 generate_password_button = Button(text="Generate Password",width=15,command=gen_pass)
 generate_password_button.grid(row=3, column=2)
-add_button = Button(text="Add", width=35,command=save)
+add_button = Button(text="Add", width=35,command=save_)
 add_button.grid(row=4, column=1,columnspan=2, sticky="EW")
 search=Button(text="Search",width=15,command=find_pas)
 search.grid(row=1,column=2)

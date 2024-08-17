@@ -41,19 +41,4 @@ while game_is_on:
         if snake.head.distance(seg)<10:
             game_is_on=False
             score.game_over()
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
 screen.exitonclick()
