@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html" >Dashboard</a></li>
+            <li><a href="search page.html">Search</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="history.html" class="active">History</a></li>
+            <li><a href="my_account.html">My Account</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container-home">
+        <h1>Records</h1>
+        <div class="search-sort">
+            <input type="text" placeholder="Search items..." id="search-bar" class="search-bar">
+            <select id="sort-options" class="sort-options">
+                <option value="Oldest">Oldest</option>
+                <option value="Recent">Recent</option>
+            </select>
+        </div>
+        <p>Filter by:</p>
+        <div class="search-sort">
+            <input type="radio" id="book" name="filter" value="book">
+            Lent
+            </label>
+            <label>
+            <input type="radio" id="electronic" name="filter" value="electronic">
+            Borrowed
+            </label>
+        </div>
+
+        <table class="book-table">
+            <thead>
+                <tr>
+                    <th>Item ID</th>
+                    <th>Items</th>
+                    <th>Name</th>
+                    <th>Mail</th>
+                    <th>Type</th>
+                    <th>Deadline</th>
+                    <th>Return day</th>
+                    <th>Rating</th>
+                    <th>Penalty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Book 1 -->
+                <tr>
+                    <td>Book Title 1</td>
+                    <td>Book</td>
+                    <td>Arib Hasan</td>
+                    <td>arib@gmail.com</td>
+                    <td>Book</td>
+                    <td>20-12-2024</td>
+                    <td>20-12-2024</td>
+                    <td>4.5</td>
+                    <td>No</td>
+                </tr>
+
+                <!-- Book 2 -->
+                <tr>
+                    <td>Book Title 2</td>
+                    <td>controller</td>
+                    <td>Nehal</td>
+                    <td>nehal@gmail.com</td>
+                    <td>electronics</td>
+                    <td>24-12-2024</td>
+                    <td>20-12-2024</td>
+                    <td>2</td>
+                    <td>Yes</td>
+                </tr>
+                <!-- More books can be added here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

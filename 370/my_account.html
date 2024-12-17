@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="search page.html">Search</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="my_account.html" class="active">My Account</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- My Account Page -->
+    <div class="container-account">
+        <!-- Account Information Section -->
+        <div class="account-info">
+            <h2>Account Information</h2>
+            <div class="user-details">
+                <div class="user-detail">
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Email:</strong> john@example.com</p>
+                    <p><strong>Phone Number:</strong>016xxxxxxx</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Score and Rating Section -->
+        <div class="score-rating">
+            <h2>Performance</h2>
+            <div class="circles-container">
+                <!-- Score Circle -->
+                <div class="circle-container">
+                    <div class="circle score">10</div>
+                    <p class="circle-label">Penalty Score</p>
+                </div>
+                <!-- Rating Circle -->
+                <div class="circle-container">
+                    <div class="circle rating">4.5/5</div>
+                    <p class="circle-label">Rating</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Profile Section -->
+        <div class="edit-profile">
+            <h2>Edit Profile</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" value="John Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="john@example.com">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" value="123-456-7890">
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+
+        <!-- Change Password Section -->
+        <div class="change-password">
+            <h2>Change Password</h2>
+            <form>
+                <label for="old-password">Old Password:</label>
+                <input type="password" id="old-password" name="old-password">
+
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+
+                <label for="confirm-password">Confirm New Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+
+                <button type="submit">Change Password</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

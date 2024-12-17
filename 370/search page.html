@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="search page.html" class="active">Search</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="my_account.html">My Account</a></li>
+            <li><a href="login.html">Log Out</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Books Page Content -->
+    <div class="container-home">
+        <h1>Search for Books</h1>
+
+        <!-- Search Bar and Sorting Options -->
+        <div class="search-sort">
+            <input type="text" placeholder="Search items..." id="search-bar" class="search-bar">
+            <select id="sort-options" class="sort-options">
+                <option value="location">Sort by Location</option>
+                <option value="Available">Sort by Availability</option>
+            </select>
+        </div>
+        <p>Filter by:</p>
+        <div class="search-sort">
+            <input type="checkbox" id="book" name="book" value="book">
+            <label for="book"> Books</label><br>
+            <input type="checkbox" id="electronic" name="electronic" value="electronic">
+            <label for="electronic"> Electronics </label><br>
+            <input type="checkbox" id="Tour" name="Tour" value="Tour Gear">
+            <label for="Tour">Tour Gears</label><br>
+        </div>
+
+        <!-- Search Results Table -->
+        <table class="book-table">
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Location</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Book 1 -->
+                <tr>
+                    <td>Book Title 1</td>
+                    <td>Library</td>
+                    <td style="text-align: center; padding: 8px; border: 1px solid #ddd;"><button style="display: block; margin: 0 auto;"> <a href="b_page.html">Borrow</a></button></td>
+                </tr>
+
+                <!-- Book 2 -->
+                <tr>
+                    <td>Book Title 2</td>
+                    <td>Home</td>
+                    <td style="text-align: center; padding: 8px; border: 1px solid #ddd;"><button style="display: block; margin: 0 auto;"> <a href="b_page.html">Borrow</a></button></td>
+                </tr>
+
+                <!-- More books can be added here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
